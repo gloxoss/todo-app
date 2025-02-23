@@ -9,7 +9,7 @@ export type Todo = {
   id: string;
   title: string;
   description: string;
-  status: 'pending' | 'completed';
+  status: 'pending' | 'in-progress' | 'completed';
   due_date?: string;
   created_at: string;
   user_id: string;

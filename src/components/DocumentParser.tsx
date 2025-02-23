@@ -34,7 +34,7 @@ export default function DocumentParser({ onTasksExtracted }: DocumentParserProps
       const formattedTasks = tasks.map((task: any) => ({
         title: task.title || 'Untitled Task',
         description: task.description || 'No description provided',
-        status: 'pending'
+        status: 'pending' as const
       }));
 
       onTasksExtracted(formattedTasks);

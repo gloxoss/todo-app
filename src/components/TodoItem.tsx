@@ -22,7 +22,7 @@ export default function TodoItem({ todo, onToggleStatus, onDelete, onUpdate }: T
       onUpdate(todo.id, {
         title: editedTitle.trim(),
         description: editedDescription.trim(),
-        due_date: editedDueDate || null,
+        due_date: editedDueDate || undefined,
       });
       setIsEditing(false);
     }

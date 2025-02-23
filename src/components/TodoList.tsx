@@ -52,7 +52,7 @@ export default function TodoList() {
           query = query.order('created_at', { ascending: false });
           break;
         case 'due_date':
-          query = query.order('due_date', { ascending: true, nullsLast: true });
+          query = query.order('due_date', { ascending: true });
           break;
         case 'title':
           query = query.order('title', { ascending: true });
